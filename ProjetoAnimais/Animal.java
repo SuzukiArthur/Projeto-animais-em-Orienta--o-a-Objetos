@@ -1,15 +1,15 @@
 package ProjetoAnimais;
 
-public class Animal{
+public class Animal {
     private String nome;
     private double peso;
     private String especie;
     private int idade;
 
-    public Animal(){
-        this.nome = "";
-        this.peso = 0.0;
-        this.especie = "";
-        this.idade = 0;
+    public Animal(double peso, String nome, int idade, String especie) {
+        this.peso = peso;
+        this.nome = nome;
+        this.idade = idade;
+        this.especie = especie;
     }
 }
