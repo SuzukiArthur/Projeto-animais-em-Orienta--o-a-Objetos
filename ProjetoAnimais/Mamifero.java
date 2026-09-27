@@ -1,9 +1,7 @@
 package ProjetoAnimais;
 
-/**
- * Subclasse 1 da hierarquia "Animal".
- * Demonstra Herança (extends) e sobrescrita de método.
- */
+// Subclasse 1 da hierarquia //
+
 
 public class Mamifero extends Animal {
 

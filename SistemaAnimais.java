@@ -5,12 +5,6 @@ import ProjetoAnimais.Animal;
 import ProjetoAnimais.Ave;
 import ProjetoAnimais.Mamifero;
 
-/**
- * Classe principal do sistema de gerenciamento de animais.
- * Usa Scanner para entrada de dados via console (cadastro interativo).
- * Demonstra: Encapsulamento, Construtores (sobrecarga), Herança e
- * Sobrecarga de métodos (polimorfismo básico).
- */
 public class SistemaAnimais {
 
     private static Scanner scanner = new Scanner(System.in);
@@ -18,7 +12,7 @@ public class SistemaAnimais {
 
     public static void main(String[] args) {
 
-        // Pré-cadastro de alguns exemplos (demonstra os dois construtores)
+        // Pré-cadastro de alguns exemplos //
         animais.add(new Mamifero("Rex", "Cachorro", 3, 28.5, 4, 0.0)); // sobrecarregado
         animais.add(new Mamifero("Mimosa", "Vaca", 5, 450.0, 4, 18.5)); // sobrecarregado
         animais.add(new Ave("Piu", "Canário", 1, 0.03, 0.18, true)); // sobrecarregado
@@ -63,8 +57,8 @@ public class SistemaAnimais {
         System.out.println("0 - Sair");
     }
 
-    // ----- Cadastro via Scanner: cria Mamifero usando o construtor sobrecarregado
-    // -----
+    // Cadastro via Scanner Mamifero // 
+
     private static void cadastrarMamifero() {
         System.out.println("\n--- Cadastro de Mamífero ---");
         String nome = lerTexto("Nome: ");
@@ -79,7 +73,7 @@ public class SistemaAnimais {
         System.out.println("Mamífero cadastrado com sucesso!");
     }
 
-    // ----- Cadastro via Scanner: cria Ave usando o construtor sobrecarregado -----
+    // Cadastro via Scanner Ave // 
     private static void cadastrarAve() {
         System.out.println("\n--- Cadastro de Ave ---");
         String nome = lerTexto("Nome: ");
@@ -94,8 +88,8 @@ public class SistemaAnimais {
         System.out.println("Ave cadastrada com sucesso!");
     }
 
-    // Demonstração de herança: percorre a lista tratando tudo como Animal (tipo
-    // base)
+    // Demonstração de herança: percorre a lista tratando tudo como Animal (tipo base) // 
+
     private static void exibirTodos() {
         System.out.println("\n--- Animais cadastrados (" + animais.size() + ") ---");
         for (int i = 0; i < animais.size(); i++) {
@@ -105,8 +99,8 @@ public class SistemaAnimais {
         }
     }
 
-    // Demonstração de sobrecarga de métodos: chama as 3 versões de
-    // calcularConsumoAlimentar
+    
+    // calcularConsumoAlimentar //
     private static void calcularConsumoDeUmAnimal() {
         if (animais.isEmpty()) {
             System.out.println("Nenhum animal cadastrado ainda.");
@@ -133,7 +127,7 @@ public class SistemaAnimais {
                 + String.format("%.3f", a.calcularConsumoAlimentar(fatorAtividade, fatorIdade)) + " kg/dia");
     }
 
-    // ----- Métodos auxiliares de leitura via Scanner (com validação simples) -----
+    // leitura via Scanner //
 
     private static String lerTexto(String mensagem) {
         System.out.print(mensagem);

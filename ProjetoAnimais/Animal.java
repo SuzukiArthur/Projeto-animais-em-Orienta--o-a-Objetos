@@ -1,11 +1,7 @@
 package ProjetoAnimais;
 
-/**
- * Classe base (ancestral) da hierarquia.
- * Demonstra Encapsulamento e Construtores (sobrecarga).
- * Todos os atributos são tipos primitivos ou String (sem relacionamentos entre
- * objetos).
- */
+// Classe base (ancestral) da hierarquia //
+
 public class Animal {
 
     private String nome;

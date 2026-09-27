@@ -1,9 +1,7 @@
 package ProjetoAnimais;
 
-/**
- * Subclasse 2 da hierarquia "Animal".
- * Demonstra Herança (extends) e sobrescrita de método.
- */
+// Subclasse 2 da hierarquia //
+
 public class Ave extends Animal {
 
     private double envergaduraAsas; // em metros //
