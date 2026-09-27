@@ -4,7 +4,7 @@ import ProjetoAnimais.Animal;
 import ProjetoAnimais.Ave;
 import ProjetoAnimais.Mamifero;
 
-public class Main {
+public class SistemaAnimais {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
