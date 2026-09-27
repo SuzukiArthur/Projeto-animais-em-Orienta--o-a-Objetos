@@ -66,7 +66,7 @@ public class Animal {
     // Método para exibir informações no console
     public void exibirInformacoes() {
         System.out.println("Nome: " + nome +
-                ", Espécie: " + especie +
+                ", Animal: " + especie +
                 ", Idade: " + idade + " ano(s)" +
                 ", Peso: " + peso + " kg");
     }

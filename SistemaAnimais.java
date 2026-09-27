@@ -68,7 +68,7 @@ public class SistemaAnimais {
     private static void cadastrarMamifero() {
         System.out.println("\n--- Cadastro de Mamífero ---");
         String nome = lerTexto("Nome: ");
-        String especie = lerTexto("Espécie: ");
+        String especie = lerTexto("Animal: ");
         int idade = lerInteiro("Idade (anos): ");
         double peso = lerDouble("Peso (kg): ");
         int patas = lerInteiro("Número de patas: ");
@@ -83,7 +83,7 @@ public class SistemaAnimais {
     private static void cadastrarAve() {
         System.out.println("\n--- Cadastro de Ave ---");
         String nome = lerTexto("Nome: ");
-        String especie = lerTexto("Espécie: ");
+        String especie = lerTexto("Animal: ");
         int idade = lerInteiro("Idade (anos): ");
         double peso = lerDouble("Peso (kg): ");
         double envergadura = lerDouble("Envergadura das asas (m): ");
