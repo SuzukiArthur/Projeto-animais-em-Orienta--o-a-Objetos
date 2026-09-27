@@ -55,7 +55,7 @@ public class SistemaAnimais {
 
         // Scanner incluído para leitura via console, conforme exigido pela
         // especificação
-        System.out.println("\nPressione ENTER para encerrar o programa...");
+        System.out.println("\nPressione ENTER para sair...");
         scanner.nextLine();
         scanner.close();
     }
