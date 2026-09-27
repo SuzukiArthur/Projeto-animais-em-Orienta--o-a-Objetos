@@ -60,7 +60,7 @@ public class SistemaAnimais {
     // Cadastro via Scanner Mamifero // 
 
     private static void cadastrarMamifero() {
-        System.out.println("\n--- Cadastro de Mamífero ---");
+        System.out.println("\n Cadastro de Mamífero ");
         String nome = lerTexto("Nome: ");
         String especie = lerTexto("Animal: ");
         int idade = lerInteiro("Idade (anos): ");
@@ -75,7 +75,7 @@ public class SistemaAnimais {
 
     // Cadastro via Scanner Ave // 
     private static void cadastrarAve() {
-        System.out.println("\n--- Cadastro de Ave ---");
+        System.out.println("\n Cadastro de Ave ");
         String nome = lerTexto("Nome: ");
         String especie = lerTexto("Animal: ");
         int idade = lerInteiro("Idade (anos): ");
@@ -91,11 +91,10 @@ public class SistemaAnimais {
     // Demonstração de herança: percorre a lista tratando tudo como Animal (tipo base) // 
 
     private static void exibirTodos() {
-        System.out.println("\n--- Animais cadastrados (" + animais.size() + ") ---");
+        System.out.println("\nAnimais cadastrados (" + animais.size() + ") ");
         for (int i = 0; i < animais.size(); i++) {
             System.out.println("[" + i + "]");
             animais.get(i).exibirInformacoes();
-            System.out.println("-----");
         }
     }
 
@@ -115,8 +114,8 @@ public class SistemaAnimais {
         }
 
         Animal a = animais.get(indice);
-        double fatorAtividade = lerDouble("Fator de atividade (ex.: 1.0 = normal, 1.2 = ativo): ");
-        double fatorIdade = lerDouble("Fator de idade (ex.: 1.0 = adulto, 0.8 = idoso): ");
+        double fatorAtividade = lerDouble("Fator de atividade (ex: 1.0 = normal, 1.2 = ativo): ");
+        double fatorIdade = lerDouble("Fator de idade (ex: 1.0 = adulto, 0.8 = idoso): ");
 
         System.out.println("\nResultados para " + a.getNome() + ":");
         System.out
