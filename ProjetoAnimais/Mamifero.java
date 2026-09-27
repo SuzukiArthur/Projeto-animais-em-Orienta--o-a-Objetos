@@ -4,10 +4,11 @@ package ProjetoAnimais;
  * Subclasse 1 da hierarquia "Animal".
  * Demonstra Herança (extends) e sobrescrita de método.
  */
+
 public class Mamifero extends Animal {
 
     private int numeroPatas;
-    private double producaoLeiteDiaria; // em litros
+    private double producaoLeiteDiaria; // em litros //
 
     // Construtor padrão - chama super()
     public Mamifero() {
@@ -16,7 +17,7 @@ public class Mamifero extends Animal {
         this.producaoLeiteDiaria = 0.0;
     }
 
-    // Construtor sobrecarregado - chama super(...) e inicializa atributos extras
+    // Construtor sobrecarregado - chama super e inicia os atributos extras //
     public Mamifero(String nome, String especie, int idade, double peso,
             int numeroPatas, double producaoLeiteDiaria) {
         super(nome, especie, idade, peso);
@@ -40,7 +41,7 @@ public class Mamifero extends Animal {
         this.producaoLeiteDiaria = (producaoLeiteDiaria < 0) ? 0.0 : producaoLeiteDiaria;
     }
 
-    // Sobrescrita de exibirInformacoes(), reutilizando o método da classe base
+    // Sobrescrita de exibirInformacoes(), reutilizando o método da classe base //
     @Override
     public void exibirInformacoes() {
         super.exibirInformacoes();

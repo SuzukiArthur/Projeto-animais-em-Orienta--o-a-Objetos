@@ -6,17 +6,17 @@ package ProjetoAnimais;
  */
 public class Ave extends Animal {
 
-    private double envergaduraAsas; // em metros
+    private double envergaduraAsas; // em metros //
     private boolean capacidadeVoo;
 
-    // Construtor padrão - chama super()
+    // Construtor padrão - chama super() //
     public Ave() {
         super();
         this.envergaduraAsas = 0.0;
         this.capacidadeVoo = false;
     }
 
-    // Construtor sobrecarregado - chama super(...) e inicializa atributos extras
+    // Construtor sobrecarregado - chama super e inicia os atributos extras //
     public Ave(String nome, String especie, int idade, double peso,
             double envergaduraAsas, boolean capacidadeVoo) {
         super(nome, especie, idade, peso);
@@ -40,7 +40,7 @@ public class Ave extends Animal {
         this.capacidadeVoo = capacidadeVoo;
     }
 
-    // Sobrescrita de exibirInformacoes(), reutilizando o método da classe base
+    // Sobrescrita de exibirInformacoes(), reutilizando o método da classe base //
     @Override
     public void exibirInformacoes() {
         super.exibirInformacoes();

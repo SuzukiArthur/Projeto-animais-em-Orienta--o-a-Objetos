@@ -13,7 +13,7 @@ public class Animal {
     private int idade;
     private double peso;
 
-    // Construtor padrão (sem parâmetros)
+    // Construtor padrão (sem parâmetros) //
     public Animal() {
         this.nome = "Sem nome";
         this.especie = "Desconhecido";
@@ -21,7 +21,7 @@ public class Animal {
         this.peso = 0.0;
     }
 
-    // Construtor sobrecarregado (com todos os atributos)
+    // Construtor sobrecarregado (com todos os atributos) // 
     public Animal(String nome, String especie, int idade, double peso) {
         setNome(nome);
         setEspecie(especie);
@@ -29,7 +29,7 @@ public class Animal {
         setPeso(peso);
     }
 
-    // ----- Getters e Setters (com validações simples) -----
+    // Getters e Setters (com validações simples) //
 
     public String getNome() {
         return nome;
@@ -63,7 +63,7 @@ public class Animal {
         this.peso = (peso < 0) ? 0.0 : peso;
     }
 
-    // Método para exibir informações no console
+    // Método para exibir informações no console //
     public void exibirInformacoes() {
         System.out.println("Nome: " + nome +
                 ", Animal: " + especie +
@@ -71,19 +71,19 @@ public class Animal {
                 ", Peso: " + peso + " kg");
     }
 
-    // ----- Sobrecarga de método: calcularConsumoAlimentar -----
+    // Sobrecarga de método: calcularConsumoAlimentar //
 
-    // Versão 1: sem parâmetros (cálculo padrão: 2% do peso corporal por dia)
+    // Versão 1: sem parâmetros (cálculo padrão: 2% do peso corporal por dia) //
     public double calcularConsumoAlimentar() {
         return peso * 0.02;
     }
 
-    // Versão 2: com um parâmetro (fator de atividade do animal)
+    // Versão 2: com um parâmetro (fator de atividade do animal) //
     public double calcularConsumoAlimentar(double fatorAtividade) {
         return peso * 0.02 * fatorAtividade;
     }
 
-    // Versão 3: com dois parâmetros (fator de atividade e fator de idade)
+    // Versão 3: com dois parâmetros (fator de atividade e fator de idade) //
     public double calcularConsumoAlimentar(double fatorAtividade, double fatorIdade) {
         return peso * 0.02 * fatorAtividade * fatorIdade;
     }
