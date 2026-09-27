@@ -16,7 +16,7 @@ public class Animal {
     // Construtor padrão (sem parâmetros)
     public Animal() {
         this.nome = "Sem nome";
-        this.especie = "Desconhecida";
+        this.especie = "Desconhecido";
         this.idade = 0;
         this.peso = 0.0;
     }
