@@ -18,8 +18,6 @@ public class SistemaAnimais {
 
     public static void main(String[] args) {
 
-        System.out.println("=== Sistema de Gerenciamento de Animais ===");
-
         // Pré-cadastro de alguns exemplos (demonstra os dois construtores)
         animais.add(new Mamifero()); // construtor padrão
         animais.add(new Ave()); // construtor padrão
@@ -28,10 +26,6 @@ public class SistemaAnimais {
         animais.add(new Ave("Piu", "Canário", 1, 0.03, 0.18, true)); // sobrecarregado
         animais.add(new Ave("Peppa", "Avestruz", 4, 105.0, 2.0, false)); // sobrecarregado
 
-        // Demonstração de encapsulamento (setters/getters) nos exemplos pré-cadastrados
-        Mamifero rex = (Mamifero) animais.get(2);
-        rex.setPeso(29.0);
-        System.out.println("Peso atualizado de " + rex.getNome() + ": " + rex.getPeso() + " kg");
 
         int opcao;
         do {
@@ -64,7 +58,7 @@ public class SistemaAnimais {
     }
 
     private static void exibirMenu() {
-        System.out.println("\n----- MENU -----");
+        System.out.println("\n - Sistema de Gerenciamento de Animais -\n");
         System.out.println("1 - Cadastrar Mamífero");
         System.out.println("2 - Cadastrar Ave");
         System.out.println("3 - Exibir todos os animais cadastrados");
