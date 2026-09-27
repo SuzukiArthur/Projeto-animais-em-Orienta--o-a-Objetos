@@ -19,13 +19,10 @@ public class SistemaAnimais {
     public static void main(String[] args) {
 
         // Pré-cadastro de alguns exemplos (demonstra os dois construtores)
-        animais.add(new Mamifero()); // construtor padrão
-        animais.add(new Ave()); // construtor padrão
         animais.add(new Mamifero("Rex", "Cachorro", 3, 28.5, 4, 0.0)); // sobrecarregado
         animais.add(new Mamifero("Mimosa", "Vaca", 5, 450.0, 4, 18.5)); // sobrecarregado
         animais.add(new Ave("Piu", "Canário", 1, 0.03, 0.18, true)); // sobrecarregado
         animais.add(new Ave("Peppa", "Avestruz", 4, 105.0, 2.0, false)); // sobrecarregado
-
 
         int opcao;
         do {
