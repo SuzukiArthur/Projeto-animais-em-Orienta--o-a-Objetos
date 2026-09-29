@@ -36,6 +36,10 @@ public class SistemaAnimais {
                 case 4:
                     calcularConsumoDeUmAnimal();
                     break;
+
+                case 5:
+                    Relatorio();
+                    break;
                 case 0:
                     System.out.println("Encerrando o sistema...");
                     break;
@@ -54,10 +58,11 @@ public class SistemaAnimais {
         System.out.println("2 - Cadastrar Ave");
         System.out.println("3 - Exibir todos os animais cadastrados");
         System.out.println("4 - Calcular consumo alimentar de um animal");
+        System.out.println("5 - Relatório");
         System.out.println("0 - Sair");
     }
 
-    // Cadastro via Scanner Mamifero // 
+    // Cadastro via Scanner Mamifero //
 
     private static void cadastrarMamifero() {
         System.out.println("\n Cadastro de Mamífero ");
@@ -73,7 +78,7 @@ public class SistemaAnimais {
         System.out.println("Mamífero cadastrado com sucesso!");
     }
 
-    // Cadastro via Scanner Ave // 
+    // Cadastro via Scanner Ave //
     private static void cadastrarAve() {
         System.out.println("\n Cadastro de Ave ");
         String nome = lerTexto("Nome: ");
@@ -88,7 +93,8 @@ public class SistemaAnimais {
         System.out.println("Ave cadastrada com sucesso!");
     }
 
-    // Demonstração de herança: percorre a lista tratando tudo como Animal (tipo base) // 
+    // Demonstração de herança: percorre a lista tratando tudo como Animal (tipo
+    // base) //
 
     private static void exibirTodos() {
         System.out.println("\nAnimais cadastrados (" + animais.size() + ") ");
@@ -98,7 +104,6 @@ public class SistemaAnimais {
         }
     }
 
-    
     // calcularConsumoAlimentar //
     private static void calcularConsumoDeUmAnimal() {
         if (animais.isEmpty()) {
@@ -166,4 +171,20 @@ public class SistemaAnimais {
             System.out.println("Resposta inválida. Digite 's' ou 'n'.");
         }
     }
+
+    private static void Relatorio() {
+        System.out.println("\nRelatorio\n" + //
+                "\nLinha escolhida da Tabela de Hierarquias de Classes em Orientação a Objetos:\n" + //
+                " \n" + //
+                "  | Classe Ancestral | Subclasse 1 | Subclasse 2\n" + //
+                "  | Animal           | Mamífero    | Ave\n" + //
+                "  \n" + //
+                "Justificativa: a hierarquia Animal, Mamífero e Ave foi escolhida porque " +
+                "representa bem a herança: mamíferos e aves compartilham atributos comuns " +
+                "(nome, espécie, idade e peso) e têm características próprias. Todos os " +
+                "atributos são primitivos ou String, respeitando a restrição de não usar " +
+                "relacionamentos entre objetos.\n");
+
+    }
+
 }
