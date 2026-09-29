@@ -1,3 +1,10 @@
+// Alice Miranda Martins //
+// Arthur Souza Ribeiro //
+// Arthur Yuji Mendes Suzuki //
+// Felipe Souza de Jesus //
+// Luiz Miguel Mazzega Lamas  //
+
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
